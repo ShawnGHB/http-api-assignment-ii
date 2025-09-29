@@ -23,7 +23,7 @@ const getUsers = (request, response) => {
     };
 
     return respondJSON(request, response, 200, results);
-  } else if (request.method === 'HEAD') {
+  } if (request.method === 'HEAD') {
     return respondJSON(request, response, 200, {});
   }
 

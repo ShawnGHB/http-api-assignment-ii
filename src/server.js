@@ -7,7 +7,6 @@ const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
 const parseBody = (request, response, handler) => {
   const body = [];
-
   // error checking
   request.on('error', (err) => {
     console.dir(err);
@@ -25,7 +24,7 @@ const parseBody = (request, response, handler) => {
     request.body = query.parse(bodyString);
 
     // Now we can handle the parsed request like GET
-    jsonHandler.addUser(request, response);
+    handler(request, response);
   });
 };
 
