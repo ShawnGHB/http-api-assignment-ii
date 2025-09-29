@@ -1,0 +1,26 @@
+{
+  "name": "http-ass-ii",
+  "version": "1.0.0",
+  "description": "se Node.js to build a simple HTTP API using the GET, HEAD &",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \\\"Tests complete\\\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShawnGHB/http-api-assignment-ii.git"
+  },
+  "author": "Shawn Tyson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShawnGHB/http-api-assignment-ii/issues"
+  },
+  "homepage": "https://github.com/ShawnGHB/http-api-assignment-ii#readme",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.32.0"
+  }
+}
